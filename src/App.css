@@ -1,38 +1,74 @@
-.App {
+body {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.searchbar {
+  font-size: 1.5em;
+  margin: 1em;
+  padding: 0.5em;
+  width: 80vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ul {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.card {
+  cursor: pointer;
+  display: grid;
+  position: relative;
+  margin: 1em auto;
+  width: 80vw;
+  height: 30vh;
+}
+
+.card img {
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.card .title {
+  font-size: 1.5em;
+  font-weight: bolder;
+  height: fit-content;
+  margin: 0.5em;
+  padding-top: 0.5em;
+  text-align: left;
+}
+
+.card .vegan {
+  align-self: flex-end;
+  color: green;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 1em;
+  padding-bottom: 0.5em;
+  text-align: left;
+}
+
+@media screen and (min-width: 480px) {
+  .card {
+    height: 50vh;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 1024px) {
+  .searchbar {
+    max-width: 850px;
   }
-  to {
-    transform: rotate(360deg);
+
+  ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 900px;
+  }
+
+  .card {
+    height: 300px;
+    width: 440px;
   }
 }
