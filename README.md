@@ -7,4 +7,4 @@ Review CSS and media querys.
 
 ## Demo
 
-https://github.com/suckak/asymm
+https://suckak.github.io/asymm/
