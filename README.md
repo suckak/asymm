@@ -2,8 +2,8 @@
 
 ## To Do
 
-use React Router to handle URL parameters
-review CSS and media querys
+Use React Router to handle URL parameters.\
+Review CSS and media querys.
 
 ## Available Scripts
 
